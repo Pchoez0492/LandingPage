@@ -18,7 +18,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(253, 7, 7);
+    background: #fff;
     z-index: 100;    
 }
 
@@ -31,7 +31,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #aaa2d7;
+    
 }
 
 #logo{
@@ -141,12 +141,7 @@ nav > ul > li a:hover{
     nav >ul >li >a:hover{
         transform: scale(1);
     }
-    nav ul li ul{
-        left: -200px;
-    }
-    nav >ul >li:hover ul{
-        top: 0px;
-    }
+   
    
     #selected{
         transform: scale(1);
@@ -177,8 +172,7 @@ nav > ul > li a:hover{
     max-width: 1200px;
     margin: auto;
     height: 100%;
-    *padding: 20px;
-    background: #7b69e3;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -190,10 +184,8 @@ nav > ul > li a:hover{
 .cover .container__info{
     width: 500px;
     margin: auto;
-    padding: 20px;
-    /* display: flex;
-    justify-content: space-around;
-    flex: wrap; */
+    *padding: 20px;
+    
 }
 .cover h1{
     
@@ -240,7 +232,7 @@ nav > ul > li a:hover{
     width: 500px;
 }
 .container__vector img{
-    *position: absolute;
+   
     bottom: 10px;
     right: 0px;
     width: 100%;
@@ -368,19 +360,112 @@ nav > ul > li a:hover{
     padding-top: 20px;
 }
 
+/*Estilos Registro*/
+
+#container__registro{
+    width: 100%;
+    *height: 120vh;
+    padding-top: 60px;
+    margin-top: 0px;
+    background:  rgb(17, 24, 39);
+}
+
+#titulo__registro{
+    width: 100%;
+    font-size: 60px;
+    font-weight: 600;
+    color: #FEBA0B;
+    text-align: center; 
+    *padding: 20px;
+    margin: auto;
+}
+
+.container__registro{
+    max-width: 1200px;
+    *height: 100%;
+   
+    margin: auto;
+    display: grid;
+    *grid-auto-rows: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,30rem),1fr));
+    gap: 20px;
+   
+}
+
+.form-register {
+    max-width: 100%;
+    background: rgb(17, 24, 39);
+    padding:  65px;
+    margin: auto;
+    *padding-top: 0px 0px;
+    border-radius: 6px;
+    color: #054639;
+    box-shadow: 0px 0px 5px #000;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.form-register h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #054639;
+}
+  
+.controls {
+    width: 100%;
+    background: #026f669b;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #054639;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #fff;
+}
+  
+.form-register p {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+.form-register a {
+    color: #054639;
+    text-decoration: none;
+}
+  
+.form-register a:hover {
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #054639;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.container__imagen__registro{
+    max-width: 1200px;
+    
+}
+.container__imagen__registro img{
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
 /*Estilos Footer*/
 footer{
     width: 100%;
     padding:  20px;
     font-family: 'Poppins', sans-serif;
-    
     background-size: cover;
     background: #f5f5f5;
-
-    /*webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
 }
 
 .container__footer{
@@ -400,7 +485,7 @@ footer{
 }
 
 .box__footer .logo img{
-    width: 180px;
+    width: 60px;
 }
 
 .box__footer .terms{
